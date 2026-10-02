@@ -1,0 +1,1 @@
+The original binary hero artwork is not source code and is available at https://intelio.raisatunjangpacok.chatgpt.site/brand/core.png. Download it to public/brand/core.png after extracting website-source.zip. All existing application source, styles, configuration, fonts and wallet assets are preserved in that archive. The existing marketing website remains hosted at the same URL.

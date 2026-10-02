@@ -1,0 +1,3 @@
+web/vendor/** linguist-vendored
+web/config.js linguist-generated
+web/abi.json linguist-generated
