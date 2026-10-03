@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Intelio | Local resource account console</title>
+  </head>
+  <body>
+    <main>
+      <p class="eyebrow">INTELIO · PROTOCOL DEVELOPMENT</p>
+      <h1>Bounded resources.<br />Visible settlement.</h1>
+      <p>
+        This separate console reads a local ResourceAccounts deployment. AI
+        inference and service delivery remain offchain. The hosted Intelio
+        website is unchanged.
+      </p>
+      <aside>
+        Local chain only · 31337 · No public deployment or production service is
+        configured.
+      </aside>
+      <form id="read-form">
+        <label for="contract">Contract address</label
+        ><input id="contract" required placeholder="0x…" autocomplete="off" />
+        <label for="app">Application ID</label
+        ><input id="app" required value="1" type="number" min="1" step="1" />
+        <button>Read application</button>
+      </form>
+      <p id="status" role="status" aria-live="polite">
+        Start Anvil and run the local journey to obtain a contract address.
+      </p>
+      <dl id="state"></dl>
+      <p>
+        For the complete funding → payment → withdrawal workflow, run
+        <code>npm run test:integration</code>. That command starts a disposable
+        chain, submits actual transactions, checks the resulting state, and
+        stops the chain.
+      </p>
+      <p>
+        Persistent local deployment instructions are in
+        <code>docs/deployment.md</code>. This console never requests a private
+        key.
+      </p>
+    </main>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
