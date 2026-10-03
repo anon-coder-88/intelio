@@ -4,18 +4,18 @@
 
 Method: published **LinguistJS 2.9.2**, offline bundled GitHub Linguist language/generated/vendor/documentation definitions, normal attribute and heuristic checks, only `programming` and `markup` categories. Every classified tracked file is measured by raw UTF-8 byte length. All delivered frontend, SDK, deployment, contract tests and measurement/journey scripts are included. `npm run language` reproduces the estimate and fails below 50%.
 
-Measured local code revision: `a33554776f028307d4f0f0552f0add62f64c2af9`. Later lockfile/documentation-only commits do not change eligible language bytes. This revision belongs to local preparation; the GitHub PR commit is recorded in publication.md after push. Published code revision: `9d71fac842d786f1a58626df97704498bf98aae7`. The source tree is verified against the published files. LinguistJS is a published implementation, not the official Ruby engine; the local result is explicitly an estimate until GitHub processes the default branch.
+Measured local code revision: `13e2d5fc2b72c2e418a05e9a510ecab560ea7ed4`. Later lockfile/documentation-only commits do not change eligible language bytes. This revision belongs to local preparation; the GitHub PR commit is recorded in publication.md after push. Published code revision: `caed9e37a0c8780b41f1dc7b6030103728f80599`. The source tree is verified against the published files. LinguistJS is a published implementation, not the official Ruby engine; the local result is explicitly an estimate until GitHub processes the default branch.
 
 | Eligible language | Bytes |
 | --- | ---: |
 | Solidity | 33,170 |
 | TypeScript | 10,844 |
-| JavaScript | 4,450 |
+| JavaScript | 5,588 |
 | HTML | 1,732 |
 | CSS | 1,086 |
-| **All eligible languages** | **51,282** |
+| **All eligible languages** | **52,420** |
 
-**Solidity = 33,170 / 51,282 × 100 = 64.68%.** The percentage exceeds the requested 50% with margin. No code was added merely to tune the ratio to 55–60%; the tests exercise the selected permission/accounting workflow.
+**Solidity = 33,170 / 52,420 × 100 = 63.28%.** The percentage exceeds the requested 50% with margin. No code was added merely to tune the ratio to 55–60%; the tests exercise the selected permission/accounting workflow.
 
 | First-party Solidity category | Bytes | Purpose |
 | --- | ---: | --- |
