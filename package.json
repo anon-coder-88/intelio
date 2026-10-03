@@ -1,0 +1,46 @@
+{
+  "name": "intelio",
+  "version": "1.0.0",
+  "description": "Intelio programmable application resource accounts",
+  "scripts": {
+    "compile": "node scripts/foundry.mjs forge build",
+    "test:contracts": "node scripts/foundry.mjs forge test",
+    "abi": "node scripts/export-abi.mjs",
+    "abi:check": "node scripts/export-abi.mjs --check",
+    "typecheck": "tsc --noEmit",
+    "test:sdk": "node --import tsx --test packages/sdk/test/*.test.ts",
+    "test:integration": "node scripts/run-local.mjs",
+    "build:web": "vite build apps/web --outDir ../../dist/web --emptyOutDir",
+    "dev:web": "vite apps/web --host 127.0.0.1",
+    "format:check": "node scripts/foundry.mjs forge fmt --check && prettier --check \"packages/sdk/**/*.ts\" \"scripts/*.{ts,mjs}\" \"apps/web/**/*.{ts,css,html}\"",
+    "language": "node scripts/language-report.mjs",
+    "forge": "node scripts/foundry.mjs forge",
+    "anvil": "node scripts/foundry.mjs anvil"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "@openzeppelin/contracts": "5.4.0",
+    "viem": "2.57.2"
+  },
+  "devDependencies": {
+    "@foundry-rs/anvil": "1.5.0",
+    "@foundry-rs/forge": "1.5.0",
+    "@types/node": "22.18.6",
+    "linguist-js": "2.9.2",
+    "prettier": "3.6.2",
+    "solc": "0.8.30",
+    "tsx": "4.20.5",
+    "typescript": "5.9.2",
+    "vite": "7.3.6"
+  },
+  "private": true,
+  "engines": {
+    "node": ">=22.18.0"
+  },
+  "overrides": {
+    "tmp": "0.2.7"
+  }
+}
