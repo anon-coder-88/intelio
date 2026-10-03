@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "Intelio programmable application resource accounts",
   "scripts": {
-    "compile": "forge build",
-    "test:contracts": "forge test",
+    "compile": "node scripts/foundry.mjs forge build",
+    "test:contracts": "node scripts/foundry.mjs forge test",
     "abi": "node scripts/export-abi.mjs",
     "abi:check": "node scripts/export-abi.mjs --check",
     "typecheck": "tsc --noEmit",
@@ -12,8 +12,10 @@
     "test:integration": "node scripts/run-local.mjs",
     "build:web": "vite build apps/web --outDir ../../dist/web --emptyOutDir",
     "dev:web": "vite apps/web --host 127.0.0.1",
-    "format:check": "forge fmt --check && prettier --check \"packages/sdk/**/*.ts\" \"scripts/*.{ts,mjs}\" \"apps/web/**/*.{ts,css,html}\"",
-    "language": "node scripts/language-report.mjs"
+    "format:check": "node scripts/foundry.mjs forge fmt --check && prettier --check \"packages/sdk/**/*.ts\" \"scripts/*.{ts,mjs}\" \"apps/web/**/*.{ts,css,html}\"",
+    "language": "node scripts/language-report.mjs",
+    "forge": "node scripts/foundry.mjs forge",
+    "anvil": "node scripts/foundry.mjs anvil"
   },
   "keywords": [],
   "author": "",

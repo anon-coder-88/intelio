@@ -1,9 +1,10 @@
+import { foundryBinary } from "./foundry.mjs";
 import { spawn } from "node:child_process";
 import { setTimeout } from "node:timers/promises";
 const port = 18545;
 const rpc = `http://127.0.0.1:${port}`;
 const anvil = spawn(
-  process.env.ANVIL_BIN ?? "anvil",
+  foundryBinary("anvil"),
   ["--host", "127.0.0.1", "--port", String(port), "--silent"],
   { stdio: ["ignore", "ignore", "pipe"] },
 );
